@@ -4,8 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo List</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    Todo List
+    <div class="todo-wrapper">
+      <!-- Todo 텍스트 -->
+      <div class="todo-text-wrapper">
+        <input
+          type="text"
+          name="text"
+          id="text"
+          autocomplete="off"
+          placeholder="할 일을 적어주세용.(Enter)"
+        />
+        <button type="button" id="textBtn">저장</button>
+      </div>
+      <!-- Todo Filters -->
+      <div class="todo-filters">
+        <ul>
+          <li><span id="all" class="active">전체</span></li>
+          <li><span id="pending">대기</span></li>
+          <li><span id="completed">완료</span></li>
+        </ul>
+      </div>
+      <!-- Todo List목록 -->
+      <ul class="todo-list" id="todo-list"></ul>
+    </div>
+
+    <script src="./js/script.js" type="text/javascript"></script>
   </body>
 </html>
